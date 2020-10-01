@@ -1,13 +1,14 @@
 import React from 'react';
-import Row from './Row';
-import Banner from './Banner'
-import request from './requests';
-import './App.css';
+import Row from '../Components/Row/Row';
+import Banner from '../Components/Banner/Banner';
+import Nav from '../Components/Nav/Nav'
+import request from '../requests';
+import './style/App.css';
 
 function App() {
 	return (
-		<div className='App'>
-			{/* Nav */}
+		<div className='app'>
+			<Nav />
 			<Banner />
 			<Row
 				title='Netflix Originals'
