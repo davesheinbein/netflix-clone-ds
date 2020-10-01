@@ -6,7 +6,7 @@
 
 ### About Us
 
-##### Simple Netflix Clone. Deployed to Firebase utilizing MovieDB, movie-trailer, react-youtube, and more.
+##### Front-End UI interface Netflix Clone.Deployed to Firebase utilizing MovieDB, movie-trailer, react-youtube, and more.
 
 #### Project Work:
 
