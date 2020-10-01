@@ -1,4 +1,4 @@
-# **Netflix Clone **
+# **Netflix Clone**
 
 ### Click the link to view the website
 
