@@ -2,11 +2,11 @@
 
 ### Click the link to view the website
 
-[Netflix Clone Webstite](https://neflix-clone-ds.web.app/)
+[Netflix Front-end UI Webstite](https://neflix-clone-ds.web.app/)
 
 ### About Us
 
-##### Front-End UI interface Netflix Clone.Deployed to Firebase utilizing MovieDB, movie-trailer, react-youtube, and more.
+##### Front-End UI interface Netflix mock web application. Deployed to Firebase utilizing MovieDB, movie-trailer, react-youtube, and more.
 
 #### Project Work:
 
@@ -50,6 +50,6 @@
 
 ##### - [] Update CSS further for additional media queries
 
-### Click the link to view David Sheinbeins Portfolio website
+### Click the link to view David Sheinbein's Portfolio website
 
 [David Sheinbein Portfolio Webstite](http://www.davidsheinbeinportfolio.com/)
