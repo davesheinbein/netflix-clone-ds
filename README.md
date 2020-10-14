@@ -20,7 +20,7 @@
 
 ![Home Page Sceenshot](screenshots/netflixCloneScreenshot.png)
 
-[Home Page Sceenshot](https://imgur.com/JJOS0gh)
+[Home Page Sceenshot](https://imgur.com/yZBV8Cm)
 
 ## Technologies Used:
 
