@@ -1,4 +1,4 @@
-# **Netflix Clone**
+# **Fakeflix Netflix Front-End UI**
 
 ### Click the link to view the website
 
@@ -6,7 +6,7 @@
 
 ### About Us
 
-##### Front-End UI interface Netflix mock web application. Deployed to Firebase utilizing MovieDB, movie-trailer, react-youtube, and more.
+##### Front-End UI interface Netflix mock web application called Fakeflix. Deployed to Firebase utilizing MovieDB, movie-trailer, react-youtube, and more.
 
 #### Project Work:
 

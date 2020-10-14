@@ -1,7 +1,7 @@
 import React from 'react';
 import Row from '../Components/Row/Row';
 import Banner from '../Components/Banner/Banner';
-import Nav from '../Components/Nav/Nav'
+import Nav from '../Components/Nav/Nav';
 import request from '../requests';
 import './style/App.css';
 
@@ -11,7 +11,7 @@ function App() {
 			<Nav />
 			<Banner />
 			<Row
-				title='Netflix Originals'
+				title='Fakeflix Originals'
 				fetchUrl={request.fetchNetflixOriginals}
 				isLargeRow={true}></Row>
 			<Row

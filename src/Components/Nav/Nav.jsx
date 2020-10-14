@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Fakeflix from '../../images/FakeflixLogo.png';
 import './style/Nav.css';
 
 function Nav() {
@@ -19,12 +20,12 @@ function Nav() {
 		<div className={`nav ${show && 'nav__black'}`}>
 			<img
 				className='nav__logo'
-				src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png'
+				src={Fakeflix}
 				alt='Netlfix Logo'
 			/>
 			<img
 				className='nav__avatar'
-				src='https://i2.sndcdn.com/avatars-000523322028-uw9xhn-t500x500.jpg'
+				src='https://www.flaticon.com/svg/static/icons/svg/3382/3382655.svg'
 				alt='Netlfix Logo'
 			/>
 		</div>
