@@ -46,6 +46,8 @@
 
 ##### 11. Git
 
+##### 12. Github
+
 ## Potential Next Steps:
 
 ##### - [] Update CSS further for additional media queries
