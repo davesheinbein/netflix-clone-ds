@@ -1,8 +1,14 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .app {
   background-color: #111;
-}
-/*# sourceMappingURL=App.css.map */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: #fff;
+  font-family: "Helvetica Neue", sans-serif;
+}/*# sourceMappingURL=App.css.map */

@@ -5,27 +5,34 @@ import './style/Nav.css';
 function Nav() {
 	const [show, handleShow] = useState(false);
 
+	const logoImg = 'https://i.imgur.com/KJAlIKg.png';
+	const avatarImg = 'https://i.imgur.com/Pnb938O.jpeg';
+
 	useEffect(() => {
+		// Add scroll event listener
 		window.addEventListener('scroll', () => {
 			if (window.scrollY > 100) {
 				handleShow(true);
 			} else handleShow(false);
 		});
 		return () => {
+			// Remove scroll event listener
 			window.removeEventListener('scroll');
 		};
 	}, []);
 
 	return (
 		<div className={`nav ${show && 'nav__black'}`}>
+			{/* Logo */}
 			<img
 				className='nav__logo'
-				src={Fakeflix}
+				src={logoImg}
 				alt='Netlfix Logo'
 			/>
+			{/* Avatar */}
 			<img
 				className='nav__avatar'
-				src='https://www.flaticon.com/svg/static/icons/svg/3382/3382655.svg'
+				src={avatarImg}
 				alt='Netlfix Logo'
 			/>
 		</div>

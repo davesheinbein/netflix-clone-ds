@@ -10,6 +10,7 @@ function Banner() {
 	const [trailerUrl, setTrailerUrl] = useState('');
 
 	useEffect(() => {
+		// Fetch a random trending movie
 		async function fetchData() {
 			const request = await axios.get(
 				requests.fetchTrending
@@ -21,13 +22,6 @@ function Banner() {
 					)
 				]
 			);
-			// console.log(
-			// 	request.data.results[
-			// 		Math.floor(
-			// 			Math.random() * request.data.length - 1
-			// 		)
-			// 	]
-			// );
 			return request;
 		}
 		fetchData();
@@ -54,8 +48,6 @@ function Banner() {
 					''
 			)
 				.then((url) => {
-					console.log(movieTrailer, 'movieTrailer');
-					console.log(url, 'url');
 					const urlParams = new URLSearchParams(
 						new URL(url).search
 					);
@@ -83,11 +75,13 @@ function Banner() {
 					backgroundPosition: 'center center',
 				}}>
 				<div className='banner__contents'>
+					{/* Movie title */}
 					<h1 className='banner__title'>
 						{movie?.title ||
 							movie?.name ||
 							movie?.original_name}
 					</h1>
+					{/* Banner buttons */}
 					<div className='banner__buttons'>
 						<button
 							className='banner__button'
@@ -98,7 +92,7 @@ function Banner() {
 							My List
 						</button>
 					</div>
-
+					{/* Movie description */}
 					<h1 className='banner__description'>
 						{truncate(movie?.overview, 150)}
 					</h1>

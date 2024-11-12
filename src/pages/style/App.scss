@@ -1,6 +1,16 @@
+// Reset margin for all elements
 * {
 	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
+
+// Main app container styling
 .app {
 	background-color: #111;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	color: #fff;
+	font-family: 'Helvetica Neue', sans-serif;
 }

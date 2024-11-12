@@ -8,8 +8,11 @@ import './style/App.css';
 function App() {
 	return (
 		<div className='app'>
+			{/* Navigation bar */}
 			<Nav />
+			{/* Banner section */}
 			<Banner />
+			{/* Rows of movies */}
 			<Row
 				title='Fakeflix Originals'
 				fetchUrl={request.fetchNetflixOriginals}

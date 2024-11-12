@@ -1,28 +1,82 @@
+// Navigation bar styling
 .nav {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	height: 25px;
+	height: 60px;
 	padding: 20px;
 	z-index: 1;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	transition: all 0.4s ease-in;
+	background: linear-gradient(
+		45deg,
+		rgba(0, 0, 0, 0.8),
+		rgba(0, 0, 0, 0.6)
+	);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	transition: background 0.5s ease-in-out;
+	background-size: 200% 200%;
+	animation: gradientShift 5s ease infinite;
 }
 
+// Black background for the navigation bar when scrolled
 .nav__black {
 	background-color: #111;
 }
 
+// Logo styling
 .nav__logo {
 	position: fixed;
 	left: 20px;
 	width: 80px;
 	object-fit: contain;
+	cursor: pointer;
+	transition: transform 0.3s ease-in-out;
+
+	&:hover {
+		transform: scale(1.1);
+	}
 }
+
+// Avatar styling
 .nav__avatar {
 	position: fixed;
 	right: 20px;
 	width: 30px;
 	object-fit: contain;
+	cursor: pointer;
+	transition: transform 0.3s ease-in-out;
+
+	&:hover {
+		transform: scale(1.1);
+		box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+		animation: pulse 1s infinite;
+	}
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes gradientShift {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

@@ -3,18 +3,33 @@
   -o-object-fit: contain;
      object-fit: contain;
   height: 448px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  animation: fadeIn 2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .banner__contents {
   margin-left: 30px;
   padding-top: 140px;
-  height: 190px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+  border-radius: 10px;
+  padding: 20px;
+  animation: slideIn 1.5s ease-out;
 }
 
 .banner__title {
   font-size: 3rem;
   font-weight: 800;
   padding-bottom: 0.3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  animation: zoomIn 1s ease-in-out;
 }
 
 .banner__description {
@@ -23,6 +38,8 @@
   font-size: 0.8rem;
   max-width: 360px;
   height: 80px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  animation: fadeInUp 1.5s ease-in-out;
 }
 
 .banner__button {
@@ -38,18 +55,57 @@
   padding-bottom: 0.5rem;
   background-color: rgba(51, 51, 51, 0.5);
   outline: transparent;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .banner__button:hover {
   color: black;
   background-color: #e6e6e6;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .banner--fadeBottom {
   height: 7.4rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(rgba(37, 37, 37, 0.61)), to(#111));
   background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
-/*# sourceMappingURL=Banner.css.map */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=Banner.css.map */
